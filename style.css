@@ -3,21 +3,15 @@
 
 body {
     font-family: "Rubik", system-ui, sans-serif;
-    /* letter-spacing: 0.55px; */
-    /* width: 97.5vw; */
     background-color: #FAFAFA !important;
-   
 }
-
-
 /* End of Body CSS */
 
 /* Navbar */
-
+/* The header component is sticky and responsive */
 .main_navbar{
     padding: 15px !important;
 }
-
 .navbar{
     right: 10px !important;
     left: 10px !important;
@@ -32,7 +26,6 @@ body {
     height: 36px;
     flex-shrink: 0;
 }
-
 .nav-item .nav-link{
     color: #4F5665;
     font-size: 16px;
@@ -43,11 +36,9 @@ body {
     font-size: 20px !important;
     font-weight: 700 !important;
 }
-
 .navbar_container{
     justify-content: space-around;
 }
-
 #nav_icons{
     display: flex;
     list-style: none;
@@ -75,11 +66,9 @@ body {
     margin-bottom: 40px;
     padding: 15px;
 }
-
 .text-color{
     color: #FF5E3A;
 }
-
 .body_heading{
     color: #000;
     /* font-family: "Roboto"; */
@@ -98,7 +87,6 @@ body {
     line-height: 25px; /* 104.167% */
     margin-bottom: 30px;
 }
-
 .img_shadow{
     position: absolute;
     top: 50px;
@@ -108,7 +96,6 @@ body {
     padding: 45px;
     /* filter: drop-shadow(-10px -10px 10px pink) */
 }
-
 .card-title{
     color: #000;
     font-size: 18px;
@@ -120,20 +107,18 @@ body {
 /* End of Common CSS */
 
 
-
-
 /* Banner Poster */
 #poster{
     border-radius: 20px;
     margin: auto;
     margin: 15px;
+    /* Implementation of Gradient to Hero Component */
     background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 158, 0.38) 100%);
 }
 .poster_part{
     margin: auto !important;
     padding-left: 40px !important;
 }
-
 #explore_now_btn{
     color: #FFF;
     font-family: "Roboto";
@@ -147,7 +132,6 @@ body {
     height: 43px;
     border: none;
 }
-
 #explore_now_btn_div{
     margin-top: 40px;
 }
@@ -188,7 +172,6 @@ main{
     margin-bottom: 30px;
 }
 .collection_selector button
-/* :not(:last-child)*/
  {
     margin-right: 25px;
 }
@@ -225,24 +208,31 @@ main{
     right: 5px;
     top: 5px;
 }
+/* Flex Row Design, Flex Wrap Usage */
+.Category_products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 /* Category scetion end */
 
 
 /* Footer */
 footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     bottom: 0;
     margin: 0px !important;
     padding: 60px;
     background-color: rgba(252, 203, 144, 0.15);
 }
-
 .footer_icon{
     background-color: #FF5E3A;
     border-radius: 50%;
     padding: 4px 3px 3px 4px;
 }
-
 .footer_heading{
     color: #0B132A;
     font-size: 18px;
@@ -269,14 +259,37 @@ footer{
 /* Media Query */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+@media screen and (max-width: 576px) { 
     .navbar_container{
         justify-content: space-between;
     }
     .collection_selector button:last-child {
         margin-right: 25px;
     }
+
+    /* horizontal scrollable products in small screen */
+    .collection_products{
+        overflow-x: auto !important;
+        flex-wrap: initial !important;
+    }
+    .collection_products::-webkit-scrollbar{
+        display: none;
+    }
+
+    .Category_products{
+        flex-wrap: wrap;
+    }
+
 }
+
+@media screen and (max-width: 650px) { 
+    /* Media Query Usage for Flex-Row to Flex-Column */
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
@@ -284,8 +297,10 @@ footer{
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-
+@media screen and (max-width: 992px) { 
+    footer{
+        flex-wrap: wrap;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
