@@ -1,0 +1,301 @@
+/* Body CSS */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@200;400;700;900&display=swap");
+
+body {
+    font-family: "Rubik", system-ui, sans-serif;
+    /* letter-spacing: 0.55px; */
+    /* width: 97.5vw; */
+    background-color: #FAFAFA !important;
+   
+}
+
+
+/* End of Body CSS */
+
+/* Navbar */
+
+.main_navbar{
+    padding: 15px !important;
+}
+
+.navbar{
+    right: 10px !important;
+    left: 10px !important;
+}
+.navbar-brand{
+    color: #FF5151;
+    font-size: 20px;
+    font-weight: 700;
+}
+.logo_img{
+    width: 35px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.nav-item .nav-link{
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+}
+.nav-item .nav-link.active{
+    color: #FF5151 !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+
+.navbar_container{
+    justify-content: space-around;
+}
+
+#nav_icons{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#nav_icons li{
+    padding-right: 20px !important;
+}
+.navbar_head_center{
+    margin: auto;
+}
+.navbar_head_center .nav-link{
+    margin-right: 15px;
+}
+
+/* End of Navbar */
+
+
+/* Common CSS */
+
+.ecom_section{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 15px;
+}
+
+.text-color{
+    color: #FF5E3A;
+}
+
+.body_heading{
+    color: #000;
+    /* font-family: "Roboto"; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+    margin-bottom: 20px;
+}
+.body_sub_heading{
+    color: #000;
+    /* font-family: "Roboto"; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px; /* 104.167% */
+    margin-bottom: 30px;
+}
+
+.img_shadow{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+}
+.poster_img{
+    padding: 45px;
+    /* filter: drop-shadow(-10px -10px 10px pink) */
+}
+
+.card-title{
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+/* End of Common CSS */
+
+
+
+
+/* Banner Poster */
+#poster{
+    border-radius: 20px;
+    margin: auto;
+    margin: 15px;
+    background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 158, 0.38) 100%);
+}
+.poster_part{
+    margin: auto !important;
+    padding-left: 40px !important;
+}
+
+#explore_now_btn{
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px; /* 156.25% */
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 81, 81, 0.50) 0%, #FF5E3A 100%);
+    width: 150px;
+    height: 43px;
+    border: none;
+}
+
+#explore_now_btn_div{
+    margin-top: 40px;
+}
+/* End of Banner */
+
+
+/* Main page CSS */
+main{
+    margin-top: 10vh;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/* End of Main page CSS */
+
+
+/* Collection section */
+#Collection .card img {
+    background: linear-gradient(180deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 158, 0.38) 100%);
+}
+#Collection .navbar .nav-item button{
+    background-color: #FFFFFF;
+}
+#Collection button{
+    width: 110px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #000;
+    background-color: #FFF;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.05);
+}
+#Collection button.active{
+    border-radius: 10px;
+    color: #FFF;
+    background: linear-gradient(180deg, rgba(255, 81, 81, 0.50) 0%, #FF5E3A 100%);
+}
+.collection_selector{
+    margin-bottom: 30px;
+}
+.collection_selector button
+/* :not(:last-child)*/
+ {
+    margin-right: 25px;
+}
+/* End of Collection section */
+
+
+/* New arrival section */
+.img_fit_class{
+    width: -webkit-fill-available;
+}
+.collection_gallary{
+    padding: 10px;
+}
+.collection_gallary img{
+    padding: 10px;
+}
+
+/* End of new arrival section */
+
+
+
+/* Category section */
+#Category .card img{
+    background-color: #F0F0F0;
+}
+
+#Category .card.active img{
+    background: linear-gradient(180deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 158, 0.38) 100%);;
+}
+.fav_icon{
+    width: 20px;
+    height: auto;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+/* Category scetion end */
+
+
+/* Footer */
+footer{
+    bottom: 0;
+    margin: 0px !important;
+    padding: 60px;
+    background-color: rgba(252, 203, 144, 0.15);
+}
+
+.footer_icon{
+    background-color: #FF5E3A;
+    border-radius: 50%;
+    padding: 4px 3px 3px 4px;
+}
+
+.footer_heading{
+    color: #0B132A;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 166.667% */
+    padding-bottom: 15px;
+}
+.footer_text{
+    color: #4F5665;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    padding-bottom: 5px;
+}
+.foot_row{
+    margin-top: 10px !important;
+}
+
+/* End of Footer */
+
+
+/* Media Query */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .navbar_container{
+        justify-content: space-between;
+    }
+    .collection_selector button:last-child {
+        margin-right: 25px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+}
+
+/* End of Media Query */
